@@ -46,3 +46,53 @@
   font-size: 15px;
   font-weight: 400;
 }
+.slide i {
+  color: red;
+  font-size: 32px;
+}
+
+.slide .information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information .name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.information .field {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.button {
+  height: 40px;
+  width: 40px;
+  font-size: 6px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: red;
+  transition: 0.2s;
+}
+
+.button::after,
+.button::before {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    display: none;
+  }
+  .slide p {
+    padding: 0 25px;
+  }
+}
